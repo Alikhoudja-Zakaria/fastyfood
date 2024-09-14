@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styleofdisplay.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="notbody">
+      <div class="toppage"></div>
+      <nav id="navy">
+        <div class="navstart">
+          <ul>
+            <li class="menu" onclick="mineur()"><i class="bx bx-menu"></i></li>
+            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./test.html">Notre carte</a></li>
+            <li class="hideOnMobile"><a href="./display.html">Create your own Meunu</a></li>
+          </ul>
+        </div>
+        <div class="navmiddle"></div>
+        <div class="navend">
+          <ul>
+            <li>gomycodelogo</li>
+          </ul>
+        </div>
+      </nav>
+<div class="toppy">
+  <div class="chiken">
+<h1>Chicken Smoky BBQ</h1>
+<p>Découvrez le Chicken Smoky BBQ : Un pain au blé torréfié, un poulet 100% filet ultra croustillant , des tranches de bacon et de cheddar le tout accompagné d'une sauce smoky chipotle.</p>
+
+  </div>
+  
+  <div class="item-image">
+    <img id="burger-image" src="./images/chiken smokey bbq.webp" alt="Burger Image"  width="384px" height="384px">
+    <img id="side-image" src="./images/king fries double cheddar.webp" alt="Side Image" width="320px"  height="320px">
+    <img id="drink-image" src="./images/cocacola sans sucre vanille.webp" alt="Drink Image" width="320px"  height="320px">
+</div>
+
+
+
+  <div class="ordery">
+ <p>Vous le voulez ? C'est par ici !</p>
+ <button onclick="bought()">Commandez</button>
+
+ 
+  </div>
+  
+
+</div>
+<div class="selection">
+  <div class="tabs">
+    <button class="tab-btn active" onclick="openTab('burgers')">Les burgers</button>
+    <button class="tab-btn" onclick="openTab('sides')">Les accompagnements</button>
+    <button class="tab-btn" onclick="openTab('drinks')">Les boissons</button>
+</div>
+
+
+
+ </div>
+<div class="middley">
+
+  <!-- Burgers -->
+<div id="burgers" class="tab-content active">
+  <h3>Choose your burger:</h3>
+  <div class="options">
+      <input type="radio" name="burger" id="smoky-bbq" checked>
+      <label for="smoky-bbq"><img src="./images/chiken smokey bbq.webp" alt="Burger Image"></label>
+
+      <input type="radio" name="burger" id="smoky-viande" checked>
+      <label for="smoky-viande"><img src="./images/viande smokey.webp" alt="Burger Image"></label>
+      <input type="radio" name="burger" id="other-burger">
+      <label for="other-burger"><img src="./images/chiken spicy.webp" alt=""></label>
+      <input type="radio" name="burger" id="toaste">
+      <label for="toaste"><img src="./images/toaste pulet fumet.webp" alt=""></label>
+      <input type="radio" name="burger" id="petittoaste">
+      <label for="petittoaste"><img src="./images/petit toaste.webp" alt=""></label>
+
+      <input type="radio" name="burger" id="wrap">
+      <label for="wrap"><img src="./images/wrap chese.webp" alt=""></label>
+      <input type="radio" name="burger" id="veggiewrap">
+      <label for="veggiewrap"><img src="./images/veggie wrap.webp" alt=""></label>
+          <input type="radio" name="burger" id="petitburger">
+      <label for="petitburger"><img src="./images/veggie burger.webp" alt=""></label>
+    </div>
+
+</div>
+
+<!-- Sides -->
+<div id="sides" class="tab-content">
+  <h3>Choose your side:</h3>
+  <div class="options">
+      <input type="radio" name="side" id="fries" checked>
+      <label for="fries"><img src="./images/king fries double cheddar.webp" alt=""></label>
+      <input type="radio" name="side" id="curly-fries">
+      <label for="curly-fries"><img src="./images/king fries krispy onions.webp" alt=""></label>
+      <input type="radio" name="side" id="onion-rings">
+      <label for="onion-rings"><img src="./images/onion rings.webp" alt=""></label>
+      <input type="radio" name="side" id="salad">
+      <label for="salad"><img src="./images/salad.webp" alt=""></label>
+  </div>
+</div>
+
+<!-- Drinks -->
+<div id="drinks" class="tab-content">
+  <h3>Choose your drink:</h3>
+  <div class="options">
+    
+      <input type="radio" name="drink" id="cokesanssucre" checked>
+      <label for="cokesanssucre"><img src="./images/cocacola sans sucre vanille.webp" alt=""></label>
+      <input type="radio" name="drink" id="coke" checked>
+      <label for="coke"><img src="./images/cocke og.webp" alt=""></label>
+      <input type="radio" name="drink" id="sprite">
+      <label for="sprite"><img src="./images/sprite.webp" alt=""></label>
+      <input type="radio" name="drink" id="fanta">
+      <label for="fanta"><img src="./images/fanta sans sucre.webp" alt=""></label>
+      <input type="radio" name="drink" id="water">
+      <label for="water"><img src="./images/ifry.webp" alt=""></label>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+      <div class="social-section">
+          <p>Qui nous aime, nous suive !</p>
+          <div class="social-icons">
+              <a href="#"><img src="./images/facebook-logo-24.png" alt="Facebook"></a>
+              <a href="#"><img src="./images/instagram-logo-24 (1).png" alt="Instagram"></a>
+              <a href="#"><img src="./images/tiktok-logo-24.png" alt="TikTok"></a>
+          </div>
+          <p>Le King dans votre poche</p>
+          <div class="app-links">
+              <a href="#"><img src="./images/pngegg (1).png" alt="App Store"></a>
+       
+          </div>
+      </div>
+  </div>
+  <div class="footer-links">
+      <div class="footer-column">
+          <h3>Produits</h3>
+          <ul>
+              <li><a href="#">Catalogue produits</a></li>
+              <li><a href="#">Nos burgers</a></li>
+              <li><a href="#">Nos menus</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Famille</h3>
+          <ul>
+              <li><a href="#">Offre famille</a></li>
+              <li><a href="#">King's Birthday</a></li>
+              <li><a href="#">Menus enfants</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Service conso</h3>
+          <ul>
+              <li><a href="#">Nous contacter</a></li>
+              <li><a href="#">Foire Aux Questions</a></li>
+              <li><a href="#">Burger King vous écoute</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Informations légales</h3>
+          <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Politique de protection des données</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>L'entreprise</h3>
+          <ul>
+              <li><a href="#">Histoire</a></li>
+              <li><a href="#">Devenir franchisé</a></li>
+              <li><a href="#">Recrutement</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>Mentions légales - CGU - CGV - Politique de protection des données personnelles - Cookies</p>
+      <p>Pour votre santé, mangez au moins cinq fruits et légumes par jour. www.mangerbouger.fr</p>
+      <p>For gomycode</p>
+  </div>
+</footer>
+
+
+
+
+
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="./script.js"></script>
+</html>

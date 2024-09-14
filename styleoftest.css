@@ -1,0 +1,162 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    color: black;
+}
+
+.side-menu a{
+
+    margin-right: 100px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f1e7;
+    color: #5a3e2b;
+}
+
+/* Layout structure */
+body {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* 250px wide sidebar and rest for the content */
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "side-menu content";
+        
+}
+
+/* Side menu styles */
+.side-menu {
+    grid-area: side-menu;
+    background-color: #b11b1b; /* Red background for the sidebar */
+    padding: 0px;
+    height: 100vh; /* Full height of the viewport */
+    margin-top: 90px;
+    width: 135.5%;
+    align-items: start;
+    overflow: hidden;
+    font-family: "Nerko One", cursive;
+
+}
+
+.side-menu ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.side-menu {
+    background-color: #bb1e32;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    min-height: 100%;
+    width: 135.5%;
+
+    align-items: start;
+    overflow: hidden;
+  }
+
+
+
+.side-menu a {
+    font-size: 11.5px;
+    font-weight: 400;
+    font-family: "Nerko One", cursive;
+    color: #f5ebdc;
+    padding: 15px;
+    padding-left: 30%;
+    padding-right: 100%;
+  }
+
+.side-menu ul li {
+    padding: 15px 0;
+    color: #f5ebdc;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.side-menu a:hover {
+    cursor: pointer;
+    background-color: #a11a2c; /* Highlight effect */
+}
+
+/* Main content container */
+.container {
+    grid-area: content;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 120px;
+}
+
+.side-menu h1 {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Responsive menu grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-item img {
+       height: 259.48px;
+    width: 259.48px ;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h2 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #5a3e2b;
+}
+/* The existing CSS code for layout, grid, and responsiveness remains unchanged */
+
+
+
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Hide the sidebar */
+    .side-menu {
+        display: none;
+    }
+
+    /* Adjust the body to be a single-column layout without the sidebar */
+    body {
+     
+        grid-template-columns: 1fr;
+        grid-template-areas: "content";
+    }
+    .footer{
+        display: none;
+    }
+}
+.footer{
+    position: absolute;
+    margin-top: 60%;
+}
+
+
+
+

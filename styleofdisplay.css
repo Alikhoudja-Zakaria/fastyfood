@@ -1,0 +1,167 @@
+.toppy{
+    margin-top: 150px;
+    background-color: #FAF5ED;
+    height: 500px;
+    display: flex;
+    padding: 60px 0px 100px;
+    justify-content: space-between;
+    margin-left:  160px;
+    margin-right: 130px;
+
+}
+nav{
+    color: black;
+}
+ h1{
+
+    font-family: "Nerko One", cursive;
+    font-size: 40px;
+}
+.chiken{
+   color: #502314; 
+   width: 300px;
+}
+
+
+.middley{
+    height: 100px;
+    background-color: white;
+
+}
+
+.item-image{
+    display: flex;
+    
+
+
+
+
+
+}
+
+#burger-image{
+position: absolute;
+left: 600px;
+z-index: 6;
+ 
+}
+#side-image{
+position: absolute;
+left: 500px;
+z-index: 5;
+
+}
+
+#drink-image{
+    position: absolute;
+    left: 780px;
+    z-index: 5;
+    
+    }
+
+.ordery{
+    font-size: 30px;
+    font-family: "Nerko One", cursive;
+    color: #502314; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    margin-right: 100px;
+    
+
+}
+.ordery button{
+    border: none;
+  background-color: #d62300;
+  color: white;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 10px;
+
+  top: 660px;
+  font-family: "Nerko One", cursive;
+
+}
+
+.selection button {
+    border: none;
+    padding: 0px 20px;
+    background-color: #F3E5D9;
+    font-family: "Nerko One", cursive;
+    font-size: 28px;
+border-top-left-radius:10px ;
+border-top-right-radius:10px ;
+
+
+}
+.selection{
+    display: flex;
+    margin-left: 100px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+
+
+}
+.dropdown {
+    margin-top: 20px;
+}
+.dropdown-btn {
+    background-color: #d6a863;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+.tab-btn {
+    background-color: #F3E5D9;
+    border: none;
+    padding: 10px 20px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tab-btn.active {
+    background-color: #ffffff;
+    color: #502314;
+    bottom: 56px;
+    height: 56px;
+
+}
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0px;
+
+}
+.tab-content.active {
+    display: block;
+}
+
+
+
+
